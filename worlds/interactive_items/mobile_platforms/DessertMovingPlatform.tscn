@@ -1,0 +1,126 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://worlds/regions/desert_region/created_tilesets/DesertTerrainTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://worlds/interactive_items/mobile_platforms/scripts/MobilePlatform.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=109]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=110]
+resource_name = "negative_horizontal"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -200, 0 ), Vector2( 0, 0 ), Vector2( 200, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=111]
+resource_name = "negative_vertical"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 200 ), Vector2( 0, 0 ), Vector2( 0, -200 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=112]
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 200, 0 ), Vector2( 0, 0 ), Vector2( -200, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=113]
+resource_name = "positive_vertical"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("KinematicBody2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -200 ), Vector2( 0, 0 ), Vector2( 0, 200 ), Vector2( 0, 0 ) ]
+}
+
+[node name="Mobile Platform" type="Node2D"]
+script = ExtResource( 2 )
+direction = "Positive"
+orientation = "Vertical"
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="Terrain" type="TileMap" parent="KinematicBody2D" groups=["Wall"]]
+scale = Vector2( 1.75, 1.75 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+collision_use_parent = true
+format = 1
+tile_data = PoolIntArray( 65534, 0, 131072, 65535, 0, 131073, 0, 0, 131073, 1, 0, 131074, 589857, 1, 7, 589858, 1, 3, 589859, 1, 3, 589860, 1, 1, 589861, 1, 1, 589862, 1, 2, 589863, 1, 2, 589864, 1, 6, 852009, 1, 7, 852010, 1, 2, 852011, 1, 1, 852012, 1, 1, 852013, 1, 2, 852014, 1, 1, 852015, 1, 2, 852016, 1, 3, 852017, 1, 1, 852018, 1, 1, 852019, 1, 6, 983072, 1, 7, 983073, 1, 2, 983074, 1, 1, 983075, 1, 2, 983076, 1, 1, 983077, 1, 3, 983078, 1, 1, 983079, 1, 6 )
+
+[node name="PlatformAnimator" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 109 )
+anims/negative_horizontal = SubResource( 110 )
+anims/negative_vertical = SubResource( 111 )
+anims/positive_horizontal = SubResource( 112 )
+anims/positive_vertical = SubResource( 113 )
+
+[node name="VPosLimit" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, -200 )
+
+[node name="VNegLimit" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 200 )
+
+[node name="HPosLimit" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 200, 0 )
+
+[node name="HNegLimit" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( -200, 0 )

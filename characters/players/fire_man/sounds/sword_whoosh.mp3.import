@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sword_whoosh.mp3-909130c8caa9794ed5c3f07d8213dae7.mp3str"
+
+[deps]
+
+source_file="res://characters/players/fire_man/sounds/sword_whoosh.mp3"
+dest_files=[ "res://.import/sword_whoosh.mp3-909130c8caa9794ed5c3f07d8213dae7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

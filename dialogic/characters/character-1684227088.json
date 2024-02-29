@@ -1,0 +1,25 @@
+{
+	"color": "#ff44ff00",
+	"description": "",
+	"display_name": "Medusa",
+	"display_name_bool": true,
+	"id": "character-1684227088.json",
+	"mirror_portraits": true,
+	"name": "Medusa",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -40,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/enemies/special_bosses/medusa/assets/medusa_icon.png"
+		},
+		{
+			"name": "medusa_fullview_icon",
+			"path": "res://characters/enemies/special_bosses/medusa/assets/medusa_fullview_icon.png"
+		}
+	],
+	"scale": 1000,
+	"theme": ""
+}

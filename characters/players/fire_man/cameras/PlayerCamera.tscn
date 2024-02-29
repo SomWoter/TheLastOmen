@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://characters/players/fire_man/cameras/PlayerCamera.gd" type="Script" id=1]
+
+[node name="PlayerCamera" type="Camera2D"]
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
+offset_v = -1.0
+editor_draw_limits = true
+script = ExtResource( 1 )

@@ -1,0 +1,20 @@
+{
+  "player_melee": {
+    "attack_dmg": 20
+  },
+  "player_spell": {
+    "attack_dmg": 30
+  },
+  "skeleton_arrow": {
+    "attack_dmg": 15
+  },
+  "skeleton_melee": {
+    "attack_dmg": 20
+  },
+  "minotaur_melee": {
+    "attack_dmg": 25
+  },
+  "minotaur_push": {
+    "attack_dmg": 35
+  }
+}

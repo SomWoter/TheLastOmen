@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://worlds/tilesets/Swamp Region Tileset/2 Background/Layers/1.png" type="Texture" id=1]
+[ext_resource path="res://worlds/tilesets/Swamp Region Tileset/2 Background/Layers/3.png" type="Texture" id=2]
+[ext_resource path="res://worlds/tilesets/Swamp Region Tileset/2 Background/Layers/5.png" type="Texture" id=3]
+[ext_resource path="res://worlds/tilesets/Swamp Region Tileset/2 Background/Layers/4.png" type="Texture" id=4]
+[ext_resource path="res://worlds/tilesets/Swamp Region Tileset/2 Background/Layers/2.png" type="Texture" id=5]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0, 1 )
+motion_mirroring = Vector2( 960.192, 540.108 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+scale = Vector2( 1.667, 1.667 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 960.192, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer2"]
+scale = Vector2( 1.667, 1.667 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 960.192, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer3"]
+scale = Vector2( 1.667, 1.667 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 960.192, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer4"]
+scale = Vector2( 1.667, 1.667 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 1 )
+motion_mirroring = Vector2( 960.192, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer5"]
+scale = Vector2( 1.667, 1.667 )
+texture = ExtResource( 3 )
+centered = false

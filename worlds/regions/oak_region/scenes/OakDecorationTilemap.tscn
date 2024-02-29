@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://worlds/regions/oak_region/created_tilesets/OakDecorationTileset.tres" type="TileSet" id=1]
+
+[node name="Decorations" type="TileMap"]
+scale = Vector2( 1.5, 1.5 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 24, 24 )
+format = 1
+tile_data = PoolIntArray( 720916, 2, 0, 851972, 0, 0, 851973, 0, 1, 851974, 0, 2, 851978, 1, 0, 851979, 1, 1, 851980, 1, 2, 851983, 1, 0, 851984, 1, 1, 851985, 1, 2 )

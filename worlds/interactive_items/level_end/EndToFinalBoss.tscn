@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://worlds/tilesets/Moonlight Region Tileset/free.png" type="Texture" id=1]
+[ext_resource path="res://EndArea.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13, 17.5 )
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "idle"
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+
+[node name="EndArea" type="Node2D" groups=["End"]]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32.6096, 208.048, 31.0592, 48.8535 )
+
+[node name="End" type="Area2D" parent="." groups=["End"]]
+collision_layer = 0
+collision_mask = 4
+
+[node name="EndCollision" type="CollisionShape2D" parent="End"]
+position = Vector2( 0, 6.5 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/idle = SubResource( 3 )
+
+[connection signal="body_entered" from="End" to="." method="_on_End_body_entered"]

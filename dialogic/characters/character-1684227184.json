@@ -1,0 +1,25 @@
+{
+	"color": "#ff056351",
+	"description": "",
+	"display_name": "Dark Knight",
+	"display_name_bool": true,
+	"id": "character-1684227184.json",
+	"mirror_portraits": true,
+	"name": "Dark Knight",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -40,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/enemies/special_bosses/dark_knight/assets/death_knight_icon.png"
+		},
+		{
+			"name": "death_knight_fullview_icon",
+			"path": "res://characters/enemies/special_bosses/dark_knight/assets/death_knight_fullview_icon.png"
+		}
+	],
+	"scale": 1000,
+	"theme": ""
+}

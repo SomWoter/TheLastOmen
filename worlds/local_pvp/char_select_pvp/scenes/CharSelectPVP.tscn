@@ -1,0 +1,883 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://gui/MinimalPixel_v2.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/GUIa.png" type="Texture" id=2]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/fireman.png" type="Texture" id=3]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/viking.png" type="Texture" id=4]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/spearwoman.png" type="Texture" id=5]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/scripts/CharSelectPVP.gd" type="Script" id=6]
+[ext_resource path="res://gui/screens/main_menu/fonts/MinimalPixel v2.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://gui/screens/main_menu/assets/GUI.png" type="Texture" id=8]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/2.png" type="Texture" id=9]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/1.png" type="Texture" id=10]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/4.png" type="Texture" id=11]
+[ext_resource path="res://worlds/local_pvp/char_select_pvp/assets/3.png" type="Texture" id=12]
+[ext_resource path="res://gui/screens/register/assets/GUI.png" type="Texture" id=13]
+[ext_resource path="res://music/xDeviruchi - Minigame .wav" type="AudioStream" id=14]
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 2 )
+region_rect = Rect2( 1.73718, 33.979, 44.3518, 44.3874 )
+margin_top = 0.582748
+
+[sub_resource type="DynamicFont" id=16]
+size = 48
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 2 )
+region_rect = Rect2( 49.6863, 33.8673, 44.5937, 12.2087 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 38
+outline_size = 3
+outline_color = Color( 0.0862745, 0.298039, 0.521569, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 2 )
+region_rect = Rect2( 64.7372, 240.897, 14.5225, 14.3895 )
+
+[sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 2 )
+region_rect = Rect2( 64.7372, 240.897, 14.5225, 14.3895 )
+modulate_color = Color( 1, 0.976471, 0.364706, 1 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 2 )
+region_rect = Rect2( 49.0636, 96.9978, 29.9816, 29.6625 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 2 )
+region_rect = Rect2( 128.77, 240.897, 14.5219, 14.3895 )
+
+[sub_resource type="StyleBoxTexture" id=24]
+texture = ExtResource( 2 )
+region_rect = Rect2( 128.77, 240.897, 14.5219, 14.3895 )
+modulate_color = Color( 1, 0.976471, 0.364706, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 2 )
+region_rect = Rect2( 144.802, 112.928, 46.4076, 14.2421 )
+
+[sub_resource type="StyleBoxTexture" id=14]
+texture = ExtResource( 2 )
+region_rect = Rect2( 144.686, 97.755, 46.5214, 13.3653 )
+
+[sub_resource type="StyleBoxTexture" id=25]
+texture = ExtResource( 2 )
+region_rect = Rect2( 144.802, 112.928, 46.4076, 14.2421 )
+modulate_color = Color( 1, 0.976471, 0.364706, 1 )
+
+[sub_resource type="StyleBoxTexture" id=31]
+texture = ExtResource( 13 )
+region_rect = Rect2( 145, 98, 46, 13 )
+modulate_color = Color( 0.698039, 0.701961, 1, 1 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 2 )
+region_rect = Rect2( 144.769, 80.9158, 46.5214, 14.2649 )
+
+[sub_resource type="Animation" id=17]
+resource_name = "fireman"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 16 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 48 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 32, 33, 34, 35, 36, 37, 38, 39 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 177, 193 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/Panel/CharName:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "FIREMAN" ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "spearwoman"
+length = 0.78
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 22 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 50 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 22, 23, 24, 25, 26, 27, 28, 29 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 170, 62 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/Panel/CharName:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "SPEARWOMAN" ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "viking"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 13 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 48 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 13, 14, 15, 16, 17, 18, 19, 20 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel/Player1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 140, 125 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/Panel/CharName:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "VIKING" ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "fireman"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 16 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 48 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 32, 33, 34, 35, 36, 37, 38, 39 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 113, 193 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/Panel/CharName:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "FIREMAN" ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "spearwoman"
+length = 0.78
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 22 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 50 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 22, 23, 24, 25, 26, 27, 28, 29 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 130, 62 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/Panel/CharName:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "SPEARWOMAN" ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "viking"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 13 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 48 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 13, 14, 15, 16, 17, 18, 19, 20 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel/Player2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 160, 125 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/Panel/CharName:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "VIKING" ]
+}
+
+[sub_resource type="DynamicFont" id=26]
+size = 32
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="StyleBoxTexture" id=27]
+texture = ExtResource( 8 )
+region_rect = Rect2( 145, 113, 46, 14 )
+
+[sub_resource type="StyleBoxTexture" id=28]
+texture = ExtResource( 8 )
+region_rect = Rect2( 145, 98, 46, 13 )
+
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 8 )
+region_rect = Rect2( 145, 81, 46, 14 )
+
+[sub_resource type="StreamTexture" id=30]
+
+[node name="CharSelectPVP" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+autoplay = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+margin_left = 260.0
+margin_top = 40.0
+margin_right = 1660.0
+margin_bottom = 1040.0
+rect_min_size = Vector2( 1400, 1000 )
+custom_styles/panel = SubResource( 8 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CenterContainer/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -525.0
+margin_top = -376.0
+margin_right = 525.0
+margin_bottom = 376.0
+rect_min_size = Vector2( 1000, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 30
+alignment = 1
+
+[node name="Title" type="Label" parent="CenterContainer/Panel/VBoxContainer2"]
+margin_right = 1050.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 16 )
+text = "Select your character"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/Panel/VBoxContainer2"]
+margin_top = 78.0
+margin_right = 1050.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_constants/separation = 50
+
+[node name="ContainerPlayer1" type="VBoxContainer" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer"]
+margin_right = 500.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 500, 450 )
+size_flags_horizontal = 9
+size_flags_vertical = 5
+
+[node name="Panel" type="Panel" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1"]
+margin_left = 80.0
+margin_top = 33.0
+margin_right = 420.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 340, 80 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_styles/panel = SubResource( 15 )
+
+[node name="CharName" type="Label" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -146.5
+margin_top = -39.5
+margin_right = 146.5
+margin_bottom = 39.5
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 9 )
+text = "FIREMAN"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1"]
+margin_top = 150.0
+margin_right = 500.0
+margin_bottom = 450.0
+
+[node name="ButtonLeft" type="Button" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer"]
+margin_top = 100.0
+margin_right = 100.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 23 )
+custom_styles/disabled = SubResource( 3 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer"]
+margin_left = 104.0
+margin_right = 396.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 200, 300 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
+custom_styles/panel = SubResource( 7 )
+
+[node name="Player1" type="Sprite" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/Panel"]
+position = Vector2( 177, 193 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 3 )
+hframes = 16
+vframes = 48
+frame = 32
+
+[node name="ButtonRight" type="Button" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer"]
+margin_left = 400.0
+margin_top = 100.0
+margin_right = 500.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 24 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="ContainerPlayer2" type="VBoxContainer" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer"]
+margin_left = 550.0
+margin_right = 1050.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 500, 450 )
+
+[node name="Panel" type="Panel" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2"]
+margin_left = 80.0
+margin_top = 33.0
+margin_right = 420.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 340, 80 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_styles/panel = SubResource( 15 )
+
+[node name="CharName" type="Label" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -146.5
+margin_top = -19.0
+margin_right = 146.5
+margin_bottom = 19.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 9 )
+text = "FIREMAN"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2"]
+margin_top = 150.0
+margin_right = 500.0
+margin_bottom = 450.0
+
+[node name="ButtonLeft2" type="Button" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer"]
+margin_top = 100.0
+margin_right = 100.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 23 )
+custom_styles/disabled = SubResource( 3 )
+custom_styles/normal = SubResource( 3 )
+
+[node name="Panel" type="Panel" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer"]
+margin_left = 104.0
+margin_right = 396.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 200, 300 )
+size_flags_horizontal = 7
+size_flags_vertical = 7
+custom_styles/panel = SubResource( 7 )
+
+[node name="Player2" type="Sprite" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/Panel"]
+position = Vector2( 113, 193 )
+scale = Vector2( -5, 5 )
+texture = ExtResource( 3 )
+hframes = 16
+vframes = 48
+frame = 39
+
+[node name="ButtonRight2" type="Button" parent="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer"]
+margin_left = 400.0
+margin_top = 100.0
+margin_right = 500.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 24 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="StartGame" type="Button" parent="CenterContainer/Panel/VBoxContainer2"]
+margin_left = 375.0
+margin_top = 605.0
+margin_right = 675.0
+margin_bottom = 705.0
+rect_min_size = Vector2( 300, 100 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/disabled = SubResource( 31 )
+custom_styles/normal = SubResource( 12 )
+text = "Start Game"
+
+[node name="AnimationPlayer1" type="AnimationPlayer" parent="."]
+anims/fireman = SubResource( 17 )
+anims/spearwoman = SubResource( 18 )
+anims/viking = SubResource( 19 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+anims/fireman = SubResource( 20 )
+anims/spearwoman = SubResource( 21 )
+anims/viking = SubResource( 22 )
+
+[node name="BackBT" type="Button" parent="."]
+self_modulate = Color( 1, 0, 0, 1 )
+margin_left = 810.0
+margin_top = 877.0
+margin_right = 1110.0
+margin_bottom = 927.0
+rect_min_size = Vector2( 300, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0.941176, 0.0705882, 0.0705882, 1 )
+custom_fonts/font = SubResource( 26 )
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 28 )
+custom_styles/normal = SubResource( 29 )
+text = "BACK"
+icon = SubResource( 30 )
+
+[node name="WinsP1" type="Label" parent="."]
+margin_left = 663.0
+margin_top = 711.0
+margin_right = 708.0
+margin_bottom = 765.0
+custom_fonts/font = SubResource( 9 )
+
+[node name="WinsP2" type="Label" parent="."]
+margin_left = 1213.0
+margin_top = 711.0
+margin_right = 1258.0
+margin_bottom = 765.0
+custom_fonts/font = SubResource( 9 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Layer1"]
+scale = Vector2( 3.33333, 3.33333 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="Layer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/Layer2"]
+position = Vector2( -5.00003, -7.00003 )
+scale = Vector2( 3.34549, 3.33642 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Layer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/Layer3"]
+scale = Vector2( 3.33333, 3.33333 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="Layer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/Layer4"]
+scale = Vector2( 3.33333, 3.33333 )
+texture = ExtResource( 11 )
+centered = false
+
+[connection signal="pressed" from="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/ButtonLeft" to="." method="_on_ButtonLeft_pressed"]
+[connection signal="pressed" from="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer1/HBoxContainer/ButtonRight" to="." method="_on_ButtonRight_pressed"]
+[connection signal="pressed" from="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/ButtonLeft2" to="." method="_on_ButtonLeft2_pressed"]
+[connection signal="pressed" from="CenterContainer/Panel/VBoxContainer2/HBoxContainer/ContainerPlayer2/HBoxContainer/ButtonRight2" to="." method="_on_ButtonRight2_pressed"]
+[connection signal="pressed" from="CenterContainer/Panel/VBoxContainer2/StartGame" to="." method="_on_StartGame_pressed"]
+[connection signal="pressed" from="BackBT" to="." method="_on_BackBT_pressed"]

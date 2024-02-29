@@ -1,0 +1,25 @@
+{
+	"color": "#ff3f3c18",
+	"description": "",
+	"display_name": "Minotoro",
+	"display_name_bool": true,
+	"id": "character-1684227011.json",
+	"mirror_portraits": true,
+	"name": "Minotoro",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -40,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/enemies/special_bosses/minotaur/Assets/minotaur_icon.png"
+		},
+		{
+			"name": "minotaur_fullview_icon",
+			"path": "res://characters/enemies/special_bosses/minotaur/Assets/minotaur_fullview_icon.png"
+		}
+	],
+	"scale": 1000,
+	"theme": ""
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fire_sword_attack1and3.mp3-ecf627f7ba150dba74d488230b09c161.mp3str"
+
+[deps]
+
+source_file="res://characters/players/fire_man/sounds/fire_sword_attack1and3.mp3"
+dest_files=[ "res://.import/fire_sword_attack1and3.mp3-ecf627f7ba150dba74d488230b09c161.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fire_sword_effects.mp3-1f142172b0df4f728dbf9b40a4f1f44b.mp3str"
+
+[deps]
+
+source_file="res://characters/players/fire_man/sounds/fire_sword_effects.mp3"
+dest_files=[ "res://.import/fire_sword_effects.mp3-1f142172b0df4f728dbf9b40a4f1f44b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

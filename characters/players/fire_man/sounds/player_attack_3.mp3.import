@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/player_attack_3.mp3-367f06008b760ed527ba8d1119fa1d69.mp3str"
+
+[deps]
+
+source_file="res://characters/players/fire_man/sounds/player_attack_3.mp3"
+dest_files=[ "res://.import/player_attack_3.mp3-367f06008b760ed527ba8d1119fa1d69.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

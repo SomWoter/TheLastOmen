@@ -1,0 +1,279 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://gui/screens/credits/fonts/MinimalPixel v3.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://gui/screens/credits/scripts/credits.gd" type="Script" id=2]
+[ext_resource path="res://gui/screens/login/fonts/MinimalPixel v2.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://gui/screens/main_menu/scenes/MainMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://gui/screens/intro/assets/backgrounds/night_parallax/1.png" type="Texture" id=5]
+[ext_resource path="res://gui/screens/intro/assets/backgrounds/night_parallax/4.png" type="Texture" id=6]
+[ext_resource path="res://gui/screens/intro/assets/backgrounds/night_parallax/2.png" type="Texture" id=7]
+[ext_resource path="res://gui/screens/intro/assets/backgrounds/night_parallax/3.png" type="Texture" id=8]
+[ext_resource path="res://music/xDeviruchi - The Final of The Fantasy.wav" type="AudioStream" id=9]
+
+[sub_resource type="DynamicFont" id=3]
+size = 124
+outline_size = 5
+outline_color = Color( 0.0627451, 0.262745, 0.541176, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/ParallaxBackground/ParallaxLayer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/ParallaxBackground/ParallaxLayer2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/ParallaxBackground/ParallaxLayer3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/ParallaxBackground/ParallaxLayer4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/ParallaxBackground/ParallaxLayer5:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "level_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Background/ParallaxBackground/ParallaxLayer:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Background/ParallaxBackground/ParallaxLayer2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Background/ParallaxBackground/ParallaxLayer3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Background/ParallaxBackground/ParallaxLayer4:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Background/ParallaxBackground/ParallaxLayer5:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "level_out"
+
+[node name="Control" type="Control"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -1189, -109 )
+script = ExtResource( 2 )
+nextScene = ExtResource( 4 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Layer1"]
+scale = Vector2( 3.33333, 3.33333 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Layer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/Layer2"]
+position = Vector2( -310, -287 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Layer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/Layer3"]
+scale = Vector2( 3.33333, 3.33333 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Layer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/Layer4"]
+scale = Vector2( 3.33333, 3.33333 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="musicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+
+[node name="titleImg" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="VscrollingText" type="VBoxContainer" parent="."]
+margin_right = 1923.0
+margin_bottom = 160.0
+
+[node name="Title" type="Label" parent="VscrollingText"]
+margin_right = 1923.0
+margin_bottom = 124.0
+custom_colors/font_color = Color( 0.423529, 0.435294, 0.772549, 1 )
+custom_colors/font_color_shadow = Color( 0.427451, 0.745098, 0.972549, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/line_spacing = 4
+custom_fonts/font = SubResource( 3 )
+text = "THE  LAST  OMEN"
+align = 1
+valign = 1
+
+[node name="scrollingText" type="HBoxContainer" parent="VscrollingText"]
+margin_top = 128.0
+margin_right = 1923.0
+margin_bottom = 160.0
+alignment = 1
+
+[node name="margin" type="MarginContainer" parent="VscrollingText/scrollingText"]
+margin_left = 959.0
+margin_right = 959.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( -1163, -679 )
+
+[node name="Titles" type="Label" parent="VscrollingText/scrollingText/margin"]
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="margin2" type="MarginContainer" parent="VscrollingText/scrollingText"]
+margin_left = 963.0
+margin_right = 963.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( -1163, -679 )
+
+[node name="Names" type="Label" parent="VscrollingText/scrollingText/margin2"]
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="LevelAnimator" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 4 )
+anims/level_in = SubResource( 5 )
+anims/level_out = SubResource( 6 )
+
+[connection signal="finished" from="musicPlayer" to="." method="_on_musicPlayer_finished"]

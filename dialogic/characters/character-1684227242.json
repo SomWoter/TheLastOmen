@@ -1,0 +1,21 @@
+{
+	"color": "#ff128b2b",
+	"description": "The Goblin that rules the shop",
+	"display_name": "Goblin",
+	"display_name_bool": true,
+	"id": "character-1684227242.json",
+	"mirror_portraits": false,
+	"name": "Goblin ",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -30,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/npc/goblin-shop/assets/goblin_icon.png"
+		}
+	],
+	"scale": 400,
+	"theme": ""
+}

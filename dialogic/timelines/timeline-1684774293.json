@@ -1,0 +1,35 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227011.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "minotaur_fullview_icon",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684227011.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684774293.json",
+		"name": "minotaur_timeline"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"color": "#ffe22121",
+	"description": "",
+	"display_name": "Omi",
+	"display_name_bool": true,
+	"id": "character-1684226814.json",
+	"mirror_portraits": true,
+	"name": "Omi",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -20,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/npc/omi/Assets/omi_icon.png"
+		}
+	],
+	"scale": 1000,
+	"theme": ""
+}

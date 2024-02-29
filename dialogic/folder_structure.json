@@ -1,0 +1,158 @@
+{
+	"files": [
+
+	],
+	"folders": {
+		"Characters": {
+			"files": [
+				"character-1684226814.json",
+				"character-1684227011.json",
+				"character-1684227088.json",
+				"character-1684227184.json",
+				"character-1684227206.json",
+				"character-1684227242.json",
+				"character-1684777064.json"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Definitions": {
+			"files": [
+				"1684276715-992",
+				"1684278454-554",
+				"1684278471-285",
+				"1684278480-954",
+				"1684278725-767",
+				"1684278734-967",
+				"1684447386-648",
+				"1684447392-787",
+				"1684447795-366",
+				"1684447813-146",
+				"1684447820-918"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": true
+			}
+		},
+		"Themes": {
+			"files": [
+				"default-theme.cfg",
+				"theme-1684790779.cfg"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Timelines": {
+			"files": [
+
+			],
+			"folders": {
+				"Dark Knight Timelines": {
+					"files": [
+						"timeline-1684773943.json",
+						"timeline-1684789272.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Goblin Timelines": {
+					"files": [
+						"timeline-1684226797.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Medusa Timelines": {
+					"files": [
+						"timeline-1684774338.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Minotoro Timelines": {
+					"files": [
+						"timeline-1684774293.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Narrator Timelines": {
+					"files": [
+						"timeline-1684774312.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Omi Timelines": {
+					"files": [
+						"timeline-1684774324.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Omicidal Timelines": {
+					"files": [
+						"timeline-1684669383.json",
+						"timeline-1684702514.json",
+						"timeline-1684920922.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		}
+	}
+}

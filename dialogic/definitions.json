@@ -1,0 +1,73 @@
+{
+	"glossary": [
+
+	],
+	"variables": [
+		{
+			"id": "1684278480-954",
+			"name": "transform_unlocked",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684276715-992",
+			"name": "coins",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684278734-967",
+			"name": "selected_character",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684278725-767",
+			"name": "ultimate_unlocked",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684447813-146",
+			"name": "ultimate_price",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684447795-366",
+			"name": "transform_price",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684447392-787",
+			"name": "dash_price",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684447386-648",
+			"name": "spell_price",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684278471-285",
+			"name": "dash_unlocked",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684278454-554",
+			"name": "spell_unlocked",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1684447820-918",
+			"name": "reincarnation_price",
+			"type": 0,
+			"value": ""
+		}
+	]
+}

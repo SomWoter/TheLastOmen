@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ball-dragon-gt-jump.mp3-be45d529ffab223511447250a57b915f.mp3str"
+
+[deps]
+
+source_file="res://characters/players/fire_man/assets/sounds/ball-dragon-gt-jump.mp3"
+dest_files=[ "res://.import/ball-dragon-gt-jump.mp3-be45d529ffab223511447250a57b915f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

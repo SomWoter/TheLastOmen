@@ -1,0 +1,233 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello, friend!"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Congratulations on accomplishing your mission! You defeated the monsters that terrorized the whole kingdom!"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I also see that you defeated the three servants of The Last Omen..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm glad to see how powerful you've become since the beginning of your journey..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, yeah. You are probably wondering why am I here..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm here to tell you a story. A story of a betrayal..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A long time ago... In this kingdom... There use to be more beings like me..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We lived peacefully draining this planet energy in order to survive..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We were the Omen Clan..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "All was perfect until a group of three heroes, like you all, assembled up in order to anhiliate my whole clan, just because our source of life was draining this planet energy until it colapsed..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But before my clan was wiped off the map, they used their dark energy in order to condemn those three heroes..."
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/viking/scenes/Viking.tscn"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "One of those heroes was your dad, the guy with the axe..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/spear_woman/scenes/SpearWoman.tscn"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "One of those heroes was your mom, that woman that controlled the power of the snakes"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/fire_man/scenes/FireMan.tscn"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "One of those heroes was your brother, that guy with that long cape and a powerful blade like yours..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, as you can supose, you defeated the condemned heroes that put end the Omen Clan..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To my clan..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And now that you put end to their existance, all the Dark Energy my clan used in order to condemn them is free..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An I can absorb that power for me, in order to avenge my clan and annihilate not only you, but the whole kingdom..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's it, I AM THE LAST OMEN!"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And now..."
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227206.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684227206.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "PAY FOR THE SINS OF YOUR ANCESTORS!"
+		},
+		{
+			"emit_signal": "absorb_and_transform",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684669383.json",
+		"name": "omicidal_timeline"
+	}
+}

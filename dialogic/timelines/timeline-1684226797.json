@@ -1,0 +1,748 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_left.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1684278454-554",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What do my eyes see?"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Are those Gold Coins?"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can trade them for many useful things for you, traveler..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What can I help you with, buddy?"
+		},
+		{
+			"choice": "Unleash my hidden power.",
+			"condition": "",
+			"definition": "1684278725-767",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"condition": "==",
+			"definition": "1684278454-554",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let's see..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look so weak fellow. I mean, don't take me wrong... But I don't think you'll get very far\nwith that simple weapon and your pretty face..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Have you heard about mana?"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is one of the forms of vital essence here in these kingdom..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It is what people use for casting spells and even deepfring eggs when they ran out of oil at home..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see you are unable to do that yet."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you trade me [spell_price] coins, I can unlock your ability of casting spells using your inner manna..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do we have a deal?"
+		},
+		{
+			"choice": "Sure",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's a pleasure making deals with you!"
+		},
+		{
+			"emit_signal": "unlock_spell",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "I don't have coins enough...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_012",
+			"value": "spell_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can see your pocket full of coins from here..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go get some coins and come back see me, then."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278454-554",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1684278471-285",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look good fellow! Have you been hitting the gym or what?"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But even lazy people know how to reach places by dashing..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You got to be kidding me. Don you even know how to dash?"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let's see..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you trade me [dash_price] coins, I can unlock your ability of dashing to reach further places faster and avoiding those wandering creeps."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do we have a deal?"
+		},
+		{
+			"choice": "Sure",
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_011",
+			"value": "dash_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's a pleasure making deals with you!"
+		},
+		{
+			"emit_signal": "unlock_dash",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "I don't have coins enogh...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_012",
+			"value": "dash_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can see your pocket full of coins from here..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go get some coins and come back see me, then."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278471-285",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1684278480-954",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/viking/scenes/Viking.tscn"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look like a cool guy. I mean, I see something inside you that freezes me out..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maybe you could use that coldness of yours in order imbue your axe in ICE..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/fire_man/scenes/FireMan.tscn"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look so hot man. I mean, I see something burning inside you..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maybe you could use that heat of yours in order to imbue your sword in FIRE..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/spear_woman/scenes/SpearWoman.tscn"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Damn gyal! You're electryfing! I mean, I can sense a spark in you that lights up this place..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maybe we can use that in order to imbue your spear  in LIGHTNING..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you trade me [transform_price] Gold Coins, I can unlock your ability that lets you imbue your weapon "
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "with your inner elemental power."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do we have a deal?"
+		},
+		{
+			"choice": "Sure!",
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_011",
+			"value": "transform_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's a pleasure making deals with you!"
+		},
+		{
+			"emit_signal": "unlock_transform",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "I don't have coins enough...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_012",
+			"value": "transform_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can see your pocket full of coins from here..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go get some coins and come back see me, then."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1684278454-554",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1684278471-285",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1684278480-954",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1684278725-767",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You've come a long way since we first met, traveler! You are so powerful now!"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I also see that you have complete controll above your mana and elemental power..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Would you like me to tell you a pro tip about the elemental power management. That will be just [ultimate_price] coins for you."
+		},
+		{
+			"choice": "Sure",
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_011",
+			"value": "ultimate_price"
+		},
+		{
+			"emit_signal": "unlock_ultimate",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you so much!"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Now, here comes the tip..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why don't you try to, instead of imbuing your weapon with your elemental power, imbue your heart with it?"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That way, you will be able to perform a powerful attack that will reduce certain enemies to ashes..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But your elemental power will be instantly drained."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "I don't have coins enough...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_012",
+			"value": "ultimate_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can see your pocket full of coins from here..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Whatever..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go get some coins and come back see me, then."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Talk about Reincarnation",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": "<",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_012",
+			"value": "reincarnation_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'm not your friend, so if you want me to listen to you, it will be [reincarnation_price] Gold Coins."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">=",
+			"definition": "1684276715-992",
+			"event_id": "dialogic_012",
+			"value": "reincarnation_price"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tell me, do you believe in reincarnation? "
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In this kingdom, it's believed that if you imagine what you want to reincarnate in, the next time you come back to life you will be what you want..."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What would you like to be in your next life?"
+		},
+		{
+			"choice": "I want to be a hot guy...",
+			"condition": "!=",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_011",
+			"value": "res://characters/players/fire_man/scenes/FireMan.tscn"
+		},
+		{
+			"emit_signal": "change_to_fireman",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "I want to be a cool dude...",
+			"condition": "!=",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_011",
+			"value": "res://characters/players/viking/scenes/Viking.tscn"
+		},
+		{
+			"emit_signal": "change_to_viking",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "I want to be a electryfing girl...",
+			"condition": "!=",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_011",
+			"value": "res://characters/players/spear_woman/scenes/SpearWoman.tscn"
+		},
+		{
+			"emit_signal": "change_to_spearwoman",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did you seriously paid [reincarnation_price] coins for that? HAHAHA."
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Imagine believing in this stuff..."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Nothing, thanks",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1684227242.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As you want, but I will not be here forever..."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684226797.json",
+		"name": "goblin_timeline"
+	}
+}

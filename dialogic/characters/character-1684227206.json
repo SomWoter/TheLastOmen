@@ -1,0 +1,21 @@
+{
+	"color": "#ff3103a3",
+	"description": "",
+	"display_name": "Omicidal",
+	"display_name_bool": true,
+	"id": "character-1684227206.json",
+	"mirror_portraits": true,
+	"name": "Omicidal",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -20,
+	"offset_y": -200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://characters/enemies/final_boss/giga-omi/assets/omicidal_icon.png"
+		}
+	],
+	"scale": 1000,
+	"theme": ""
+}

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://worlds/regions/oak_region/scenes/OakDangerTilemap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://worlds/interactive_items/spikes/scripts/Spikes.gd" type="Script" id=2]
+
+[node name="Danger" type="Area2D"]
+collision_mask = 5
+script = ExtResource( 2 )
+
+[node name="Danger" parent="." instance=ExtResource( 1 )]
+collision_use_parent = true
+
+[connection signal="body_entered" from="." to="." method="_on_Danger_body_entered"]

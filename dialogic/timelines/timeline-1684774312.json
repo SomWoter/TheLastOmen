@@ -1,0 +1,287 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684777064.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684777064.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello, traveler..."
+		},
+		{
+			"character": "character-1684777064.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You look lost..."
+		},
+		{
+			"character": "character-1684777064.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Looks like you need someone to put you in context..."
+		},
+		{
+			"character": "character-1684777064.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let me help you with that..."
+		},
+		{
+			"emit_signal": "show_omi",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My name is Omi! "
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I will be the one to help you along your adventure!"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, as I said, let me introduce you the kingdom current situation..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A long time ago, the race of the Omen's, a clan of evil entities that were corrupting the kingdom, was eliminated by a team of heroes..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Heroes like you..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And since a long time ago, there was peace in this kingdom..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But not long ago, some evil forces showed up back again in the kingdom..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They called themselves the Three Servants of The Last Omen..."
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227011.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "minotaur_fullview_icon",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227011.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "medusa_fullview_icon",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227184.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "death_knight_fullview_icon",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227184.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And they swore to take revenge on the ones that put end to the Omen Clan..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And that's why we need your help!"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Travel through the different regions of the kingdom"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "and put an end to the torture of those poor creatures..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You may find a lot of enemies in your journey..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But I'm sure that being that strong, you will manage..."
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good luck traveler! Enjoy your journey!"
+		},
+		{
+			"character": "character-1684226814.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "See ya around!"
+		},
+		{
+			"emit_signal": "hide_omi",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684774312.json",
+		"name": "introduction_timeline"
+	}
+}

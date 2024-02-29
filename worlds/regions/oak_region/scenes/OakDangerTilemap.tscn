@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://worlds/regions/oak_region/created_tilesets/OakDangerTileset.tres" type="TileSet" id=1]
+
+[node name="Danger" type="TileMap" groups=["Danger"]]
+scale = Vector2( 1.5, 1.5 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 24, 24 )
+format = 1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/obelisk_effect.mp3-58555dac9b4adc620fca2bbeaf8ef6c9.mp3str"
+
+[deps]
+
+source_file="res://worlds/interactive_items/checkpoints/assets/sounds/obelisk_effect.mp3"
+dest_files=[ "res://.import/obelisk_effect.mp3-58555dac9b4adc620fca2bbeaf8ef6c9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

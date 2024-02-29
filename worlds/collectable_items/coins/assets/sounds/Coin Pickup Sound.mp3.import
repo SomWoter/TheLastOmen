@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Coin Pickup Sound.mp3-4c5c40214a532a4840f3276113557169.mp3str"
+
+[deps]
+
+source_file="res://worlds/collectable_items/coins/assets/sounds/Coin Pickup Sound.mp3"
+dest_files=[ "res://.import/Coin Pickup Sound.mp3-4c5c40214a532a4840f3276113557169.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

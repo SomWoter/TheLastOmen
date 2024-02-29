@@ -1,0 +1,186 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://characters/enemies/mobs/ghost/assets/Ghost-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://mobs/ghost/scripts/Ghost.gd" type="Script" id=2]
+[ext_resource path="res://mobs/skeleton_archer/assets/BarV5_ProgressBarBorder.png" type="Texture" id=3]
+[ext_resource path="res://mobs/skeleton_archer/assets/BarV5_ProgressBar.png" type="Texture" id=4]
+[ext_resource path="res://mobs/skeleton_archer/assets/BarV5_Bar.png" type="Texture" id=5]
+[ext_resource path="res://mobs/skeleton_archer/scenes/Skeleton Archer.tscn" type="PackedScene" id=6]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.33333
+height = 30.0
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "die"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 84, 84, 85, 86, 87, 88, 89, 90, 91 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "shoot"
+length = 0.65
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.001, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 43, 16, 44, 45 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "stay"
+length = 0.7
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3, 4, 5, 6, 7 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "walk"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 15, 16, 17, 18, 19 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "walk_faster"
+
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "die"
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "shoot"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "walk"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=9]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=10]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=16]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=17]
+
+[sub_resource type="AnimationNodeStateMachine" id=11]
+states/die/node = SubResource( 15 )
+states/die/position = Vector2( 664, 118 )
+states/shoot/node = SubResource( 7 )
+states/shoot/position = Vector2( 475, 63 )
+states/walk/node = SubResource( 8 )
+states/walk/position = Vector2( 222, 136 )
+transitions = [ "walk", "shoot", SubResource( 9 ), "shoot", "walk", SubResource( 10 ), "shoot", "die", SubResource( 16 ), "walk", "die", SubResource( 17 ) ]
+start_node = "walk"
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=12]
+
+[sub_resource type="RectangleShape2D" id=13]
+
+[node name="ghost" type="KinematicBody2D" groups=["Enemy"]]
+scale = Vector2( 2.5, 2.5 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 14
+vframes = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.66667, 1.66667 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/die = SubResource( 14 )
+anims/shoot = SubResource( 3 )
+anims/stay = SubResource( 4 )
+anims/walk = SubResource( 5 )
+anims/walk_faster = SubResource( 6 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 11 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 12 )
+
+[node name="RayCast2D" type="RayCast2D" parent="." groups=["Enemy"]]
+enabled = true
+cast_to = Vector2( 244, 0 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 18, 0 )
+shape = SubResource( 13 )
+
+[node name="Spot_spawn" type="Position2D" parent="."]
+position = Vector2( 8.66667, -11.6667 )
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+visible = false
+margin_left = -30.0
+margin_top = -32.0
+margin_right = 30.0
+margin_bottom = -25.0
+texture_under = ExtResource( 5 )
+texture_over = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Skeleton Archer" parent="." instance=ExtResource( 6 )]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

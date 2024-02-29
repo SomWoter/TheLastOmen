@@ -1,0 +1,82 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "You commited a mistake coming to my domains, moron!"
+		},
+		{
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "You will look great in my garden..."
+		},
+		{
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "AS A STATUE!"
+		},
+		{
+			"condition": "",
+			"definition": "1684278734-967",
+			"event_id": "dialogic_012",
+			"value": "res://characters/players/spear_woman/scenes/SpearWoman.tscn"
+		},
+		{
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "..."
+		},
+		{
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "My daughter..."
+		},
+		{
+			"character": "character-1684227088.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Save me..."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"emit_signal": "start_combat",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1684774338.json",
+		"name": "medusa_timeline"
+	}
+}

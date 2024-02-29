@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fireball_cast.mp3-e0ced0c2b8f52fdb6f27233bc2744bd5.mp3str"
+
+[deps]
+
+source_file="res://characters/players/fire_man/sounds/fireball_cast.mp3"
+dest_files=[ "res://.import/fireball_cast.mp3-e0ced0c2b8f52fdb6f27233bc2744bd5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://worlds/regions/oak_region/created_tilesets/OakPlatformTileset.tres" type="TileSet" id=1]
+
+[node name="Platforms" type="TileMap" groups=["Platform"]]
+scale = Vector2( 1.5, 1.5 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 24, 24 )
+format = 1
+tile_data = PoolIntArray( 262167, 0, 524290, 262168, 0, 196609, 262169, 0, 196609, 262170, 0, 196610, 262171, 0, 196609, 262172, 0, 196610, 262173, 0, 196609, 262174, 0, 524291, 458775, 0, 524290, 458776, 0, 196609, 458777, 0, 196609, 458778, 0, 196609, 458779, 0, 196610, 458780, 0, 196609, 458781, 0, 196610, 458782, 0, 524291, 655383, 0, 524290, 655384, 0, 196610, 655385, 0, 196609, 655386, 0, 196609, 655387, 0, 196610, 655388, 0, 196610, 655389, 0, 196609, 655390, 0, 524291 )

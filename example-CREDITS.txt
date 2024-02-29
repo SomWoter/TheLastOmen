@@ -1,0 +1,26 @@
+﻿
+
+
+
+[Game developers]
+Adrian Blanco Orellana
+Roger Izquierdo Santacreu
+Andrei Catalin Marin
+
+[Institution]
+Institut Provençana
+Carrer Sant Pius X 8,
+L'Hospitalet de Llobregat (Barcelona)
+
+[Art dessigners]
+Dremir (Mobs, Characters)
+Penzilla (NPC'S)
+Craftpix (Tilesets)
+Adwit Rahman (GUI)
+xDeviruchi (Music)
+
+
+
+
+
+Developed with GODOT
